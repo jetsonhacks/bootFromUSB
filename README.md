@@ -54,7 +54,7 @@ Before editing the extlinux.conf file make a copy of it.
 
 An entry should be added to point to the new root (typically this is /dev/sda1). There is a sample configuration file: sample-extlinux.conf in the bootFromUSB repository. 
 
-It can be a good idea to use the PARTUUID of the disk to identify the disk location. This is the UUID of the disk in the GPT partition table, thus PARTUUID. There another UUID identifier, referred to as UUID, which is the UUID given by the file system. Use the PARTUUID for this application. 
+It can be a good idea to use the PARTUUID of the disk to identify the disk location. This is the UUID of the disk in the GPT partition table, thus PARTUUID. There is another UUID identifier, referred to as UUID, which is the UUID given by the file system. Use the PARTUUID for this application. 
 
 There is a convenience file: partUUID.sh which will determine the PARTUUID of a given device. This is useful in determining the PARTUUID of the USB drive. Note: If the PARTUUID returned is not similar in length to the sample-extlinux.conf example, then it is likely that the device is not formatted as ext4.
 
