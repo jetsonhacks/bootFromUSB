@@ -56,8 +56,6 @@ An entry should be added to point to the new root (typically this is /dev/sda1).
 
 It can be a good idea to use the PARTUUID of the disk to identify the disk location. This is the UUID of the disk in the GPT partition table, thus PARTUUID. There another UUID identifier, referred to as UUID, which is the UUID given by the file system. Use the PARTUUID for this application. 
 
-The reason to be more specific is that sometimes people use more than one USB drive on a system. Because USB does not have a guaranteed enumeration sequence, it may be possible that a specific address such as /dev/sda1 does not end up pointing to the boot drive.
-
 There is a convenience file: partUUID.sh which will determine the PARTUUID of a given device. This is useful in determining the PARTUUID of the USB drive. Note: If the PARTUUID returned is not similar in length to the sample-extlinux.conf example, then it is likely that the device is not formatted as ext4.
 
 ```
