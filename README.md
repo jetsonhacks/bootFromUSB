@@ -12,7 +12,7 @@ Under JetPack 4.5 (L4T 32.5) there is an issue on Jetson Nano that it was not ab
 In order to setup a Jetson to boot from a USB device, there are several steps.
 
 
-## <h3>Step 1: Boot the Jetson
+## Step 1: Boot the Jetson
 During the initial setup of L4T 32.5, the firmware for all Jetson Nano developer kits relocate the boot firmware from the micro SD card to Jetson module integrated QSPI-NOR flash memory. This also changes the layout of the SD card.
 
 ## Step 2: Prepare the USB Drive
@@ -22,7 +22,7 @@ Prepare the USB drive (preferably USB 3.0+, SSD, HDD, or SATA->USB) by formattin
 
 Mount the disk. If you are using a desktop, you can do this by clicking on the disks icon.
 
-##Step 3: For Jetson Nano Developer Kits (include 2GB) Only
+## Step 3: For Jetson Nano Developer Kits (include 2GB) Only
 
 Install the payload updater to fix a loading issue.
 
@@ -47,7 +47,7 @@ usage: ./copyRootToUSB.sh [OPTIONS]
   -h | --help  This message
   ```
 
-## Step 4
+## Step 5
 Modify the /boot/extlinux/extlinux.conf file located on the USB drive. This is in a system protected area, so you will need privileges to change the file, ie 'sudo gedit'. One way to do this is to use the file browser to navigate to the USB drive, find the boot/extlinux directory, and then open a terminal from the context menu. 
 
 Before editing the extlinux.conf file make a copy of it. 
@@ -72,7 +72,7 @@ $ ./partUUID.sh -d sdb1
 
 The reason to be more specific is that sometimes people use more than one USB drive on a system. Because USB does not have a guaranteed enumeration sequence, it may be possible that a specific address such as /dev/sda1 does not end up pointing to the boot drive.
 
-## Step 5
+## Step 6
 
 Remove the micro SD card if applicable, and boot the system.
 
