@@ -1,5 +1,5 @@
 # bootFromUSB
-Boot NVIDIA Jetson Developer Kit from a mass storage USB device (Jetson Xavier NX, Jetson Nano devices, Jetson AGX Xavier series, and Jetson TX1 only)
+Boot NVIDIA Jetson Developer Kit from a mass storage USB device (Jetson Xavier NX, Jetson Nano devices, Jetson AGX Xavier series, and Jetson TX1 only). This setup is done from the Jetson Development Kit itself.
 
 <h1>Work In Progress</h1>
 
