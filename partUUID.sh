@@ -28,7 +28,7 @@ while [ "$1" != "" ]; do
     shift
 done
 
-PARTUUID_STRING=$(blkid -o value -s PARTUUID $PARTITION_TARGET)
+PARTUUID_STRING=$(sudo blkid -o value -s PARTUUID $PARTITION_TARGET)
 echo PARTUUID of Partition: $PARTITION_TARGET
 echo $PARTUUID_STRING
 echo 
