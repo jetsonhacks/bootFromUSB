@@ -1,5 +1,5 @@
 # bootFromUSB
-Boot NVIDIA Jetson Developer Kit from a mass storage USB device (Jetson Xavier NX, Jetson Nano devices, Jetson AGX Xavier series, and Jetson TX1 only). This setup is done from the Jetson Development Kit itself.
+Boot NVIDIA Jetson Nano Developer Kit from a mass storage USB device. This includes Jetson Nano 2GB, and may also work with the TX1. This setup is done from the Jetson Development Kit itself.
 
 <h1>Work In Progress</h1>
 
@@ -13,7 +13,7 @@ In order to setup a Jetson to boot from a USB device, there are several steps.
 
 
 ## Step 1: Boot the Jetson
-During the initial setup of L4T 32.5, the firmware for all Jetson Nano developer kits relocate the boot firmware from the micro SD card to Jetson module integrated QSPI-NOR flash memory. This also changes the layout of the SD card.
+During the initial setup of L4T 32.5, the firmware for all Jetson Nano developer kits relocate the boot firmware from the micro SD card to the Jetson module integrated QSPI-NOR flash memory. This also changes the layout of the SD card.
 
 ## Step 2: Prepare the USB Drive
 Plug in the USB drive.
