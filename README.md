@@ -20,7 +20,7 @@ Plug in the USB drive.
 
 Prepare the USB drive (USB 3.0+, SSD, HDD, or flash drive) by formatting the disk as GPT with an Ext4 partition. Formatting the disk will erase any data that is on that disk. When finished, the disk should show as /dev/sda1 or similar. Note: Make sure that the partition is Ext4, as other formats will appear to copy correctly but cause issues later on. You may set the volume label during this process.
 
-You can prepare the USB drive by using the Disks app. Formatting the disk using Format and creating a partition are two different tasks. Format the disk as GPT, then add a partition formatted as Ext4.
+You can prepare the USB drive by using the Disks app. Formatting the disk using Format and creating a partition are two different tasks. Format the disk as GPT, then add a partition formatted as Ext4. Name the newly created partition APP so that Jetson system apps recognize it correctly.
 
 Once the disk is ready, mount the disk. If you are using a desktop, you can do this by clicking on the USB disk icon and opening a file browser on its contents.
 
